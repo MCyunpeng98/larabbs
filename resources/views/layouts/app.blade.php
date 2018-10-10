@@ -17,10 +17,11 @@
 <body>
 <div id="app" class="{{ route_class() }}-page">
 
+
     @include('layouts._header')
 
     <div class="container">
-
+        @include('layouts._message')
         @yield('content')
 
     </div>
