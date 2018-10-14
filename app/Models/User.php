@@ -31,4 +31,8 @@ class User extends Authenticatable
     public function topics(){
         return $this->hasMany(Topic::class);
     }
+
+    public function isAuthorOf($mode){
+        return $this->id == $mode->user_id;
+    }
 }
