@@ -60,7 +60,6 @@ class SlugTranslateHandler
 
     public function pinyin($text)
     {
-        dd(1);
         return str_slug(app(Pinyin::class)->permalink($text));
     }
 }
